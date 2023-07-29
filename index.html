@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My App</title>
+</head>
+<body>
+  <div>
+    <!-- Formulario para Firestore -->
+    <form id="firestoreForm">
+      <input type="text" id="textInput" />
+      <button type="submit">Enviar a la base de datos</button>
+    </form>
+    <!-- Formulario para Storage -->
+    <form id="storageForm">
+      <input type="file" id="fileInput" />
+      <button type="submit">Cargar imagen</button>
+    </form>
+    <div id="message"></div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js"></script>
+  <script src="main.js"></script> <!-- Aquí se carga el archivo main.js -->
+
+</body>
+</html>
